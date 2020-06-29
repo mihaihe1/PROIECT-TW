@@ -1,0 +1,181 @@
+	/*VALIDAT*/
+	#timp_p{
+		display:inline;
+		background-color:#15cdd6;
+		font-size:20px;
+	}
+	
+	main{
+		padding-left:3%;
+		padding-right:10%;
+		padding-top:5%;
+	}
+	
+	@font-face{
+		font-family:font;
+		src: url(../fonts/FFF_Tusj.ttf);
+		font-weight:600;
+	}
+	
+	.center{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 10%;
+	}
+	
+	li{
+		display:inline;
+		background-color:#ebcc34;
+		font-family:verdana;
+		font-size:20px;
+		margin-left:1%;
+		border:2px solid black;
+	}
+	
+	nav{
+		width:100%;
+		position:static;
+	}
+	
+	ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		font-size:1.2rem;
+		font-weight:bold;
+		height:1.2rem;
+		line-height:1.2rem;
+		text-align:center;		
+		overflow:hidden;
+	}
+	
+	ul.menu>li{
+	 float:left;
+	 width:12.5%;
+	}
+	
+	ul.submenu>li{
+	 width:70%;
+	}
+	
+	ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
+		display:block;
+		height:	100%;
+		text-decoration:none;
+		color:black;
+	}
+	
+	ul.menu>li a, ul.menu>li div{
+		background-color:#ebcc34;
+		transition: background 2s linear;
+	}
+
+	ul.menu>li>ul.submenu{
+		position:relative;
+		top:0px;
+	}
+
+	ul.menu>li>ul.submenu>li{
+		border-top:1px solid black;
+	}
+	
+	ul.menu>li>ul.submenu>li:last-child{
+		border-bottom:1px solid black;
+	}
+
+	ul.menu>li>a:hover, ul.submenu>li>a:hover{
+		background-color:#e3c1b9;
+		transition: background 0s;
+	}
+	
+	ul.menu>li:hover{
+		overflow:visible;
+	}
+	
+	#albina{
+		height:10vh;
+		width:12vw;
+	}
+	
+	#api{
+		font-size:55px; 
+		font-family:verdana;
+	}
+	
+	@media screen and (min-width:400px) and (max-width:700px){
+		#albina{
+			width:50%;
+		}
+		
+		#api{
+			display:inline;
+			margin-left:17%;
+			background-color:#ebcc34;
+		}
+		
+		p{
+		float:none;
+		width:100%;
+		}
+		
+		nav{
+			display:block;
+			width:100%;
+		}
+		
+		ul.menu>li{
+		 float:none;
+		 width:30%;
+		}
+
+		ul.menu>li:hover ul.submenu{
+			width:100vw;
+			position:static;
+			padding-left:0px;
+			background-color:#ebcc34;
+		}
+		
+		ul.menu>li:hover ul.submenu>li{
+			float:left;
+			width:30%;
+			border:2px solid black;
+		}
+	}
+	@media screen and (min-width:700px) and (max-width:1000px){
+		#albina{
+			width:25vw;
+		}
+		
+		#api{
+			display:inline;
+			margin-left:35%;
+			background-color:#ebcc34;
+		}
+		
+		p{
+		float:none;
+		width:100%;
+		}
+		
+		nav{
+			width:100%;
+		}
+		
+		ul.menu>li{
+		 float:none;
+		 width:30%;
+		 height:40px;
+		}
+
+		ul.menu>li:hover ul.submenu{
+			width:100vw;
+			position:static;
+			padding-left:0px;
+			background-color:#ebcc34;
+		}
+		
+		ul.menu>li:hover ul.submenu>li{
+			float:left;
+			width:40%;
+			border:2px solid black;
+		}
+	}

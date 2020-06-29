@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- VALIDAT -->
+<html lang="ro">
+    <head>
+		<meta charset="UTF-8"/>
+		<title>Articole</title> 
+		<meta name="description" content="Informatii despre apicultura">
+        <meta name="author" content="Mihai Hernest">
+        <meta name="keywords" content="albina,articole,informatii,targ,spor,apicultura">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/stil.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/stilinfo.css"/>
+		<script src="js/script_info.js"></script>
+    </head>
+	<body>
+		<figure>
+            <img id="albina" src="../images/image.jpg" alt="Albina" class="center" title="albina"/> 
+            <figcaption id="api" class="center">APINET</figcaption>
+        </figure>
+		<%- include("../fragmente/header")  %>
+		<main>
+		<h1 id="art">ARTICOLE</h1>
+		<article>
+			<h2>Targuri apicole 2020</h2>
+				<ul>
+					<li>Targ Apicol Craiova, Editia a doua - 10 MARTIE</li>
+					<li>Targ Apicol Targu Mures, Prima editie - 23 MARTIE</li>
+					<li>Targul Mierii Campina, Editia a X-a - 28-29 MARTIE</li>
+					<li>Targul pentru un Viitor Sanatos Cluj-Napoca - 12 APRILIE</li>
+				</ul>
+		</article>
+		
+		<article>
+			<h2>Apicultura in Romania</h2>
+			<p>Apicultura în România sau stupăritul este unul din sectoarele agriculturii cu cele mai vechi tradiții. Tracii și dacii, strămoși ai poporului român, se ocupau cu creșterea albinelor de la care obțineau miere, ceară și alte produse apicole.
+
+Astfel, Herodot menționează (secolul al V-lea î.Hr.) mulțimea albinelor la nordul Dunării, aceasta fiind prima atestare documentară a apiculturii pe teritoriul României. de asemenea, există numeroase alte izvoare istorice, descoperiri arheologice, surse folclorice care atestă continuitatea apiculturii în spațiul carpato-danubiano-pontic.
+
+Apicultura, ca ramură a agriculturii este o activitate benefică prin faptul că albinele au o contribuție importantă la creșterea recoltelor prin polenizare.
+
+În anul 2011, producția de miere din România a fost de 21.000 de tone (26.000 de tone conform unei alte estimări), în timp ce producția de polen s-a ridicat la 50-60 de tone, iar cea de propolis - la 25-30 de tone.
+
+Din totalul producției, peste 60% a fost exportată în țări precum Germania, Marea Britanie, Italia, Franța, Austria, dar și SUA, Canada, Japonia sau China. În 2009, România a exportat 10.654 de tone de miere și a importat 515 tone. În anul 2011, România a ocupat locul 10 la nivel mondial la exporturile de miere.
+
+Dacă în 2000 România producea șase tone de miere „eco”, în 2011 s-au produs 3.800 de tone, care s-au exportat în proporție de 80% în Franța și Germania.</p>
+		</article>
+		
+		<form id="idform">
+		In ce an a ocupat Romania locul 10 la nivel mondial la exporturile de miere: <input type="text" id="info" onclick="foc()">
+		</form>
+		<button id="buton" onclick="verif()">Sub</button>
+		<p id="raspuns"></p>
+		<article>
+			<h2>7 Lucruri pe care nu le stiai despre viata albinelor</h2>
+				<div class="stca">Știai că ... într-un stup sunt aproximativ 60.000 albine?</div>
+				<div class="stca">Știai că ... matca depune 2.000 de ouă într-o singura zi?</div>
+				<div class="stca">Știai că ... albinele dintr-un stup vizitează 225.000 flori în fiecare zi?</div>
+				<div class="stca">Știai că ... albinele dintr-un stup parcurg 8.000 km pentru 1 kg de miere?</div>
+				<div class="stca">Știai că ... albinele se deplasează cu o viteză medie de 24km/h?</div>
+				<div class="stca">Știai că ... o albină are 12.000 de bătăi din aripi pe minut?</div>
+		</article>
+		<h2>Sporul de productie al albinelor</h2>
+		<table id="tabel">
+			<thead>
+				<tr>
+					<th>PLANTE</th>
+					<th>NR. FAMILII DE ALBINE/HA</th>
+					<th>SPOR DE PRODUCTIE(%)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Trifoi</td>
+					<td>4-5</td>
+					<td>200-300</td>
+				</tr>
+				<tr>
+					<td>Floarea-soarelui</td>
+					<td>1-2</td>
+					<td>30-50</td>
+				</tr>
+				<tr>
+					<td>Rapita, Mustar</td>
+					<td>4</td>
+					<td>25-50</td>
+				</tr>
+				<tr>
+					<td>Bostanoase</td>
+					<td>0.5-1</td>
+					<td>200-400</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Numar plante:</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p id="timp_p"></p>
+		</main>
+		<%- include("../fragmente/footer")  %>
+	</body>
+</html>

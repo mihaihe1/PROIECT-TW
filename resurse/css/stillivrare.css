@@ -1,0 +1,59 @@
+	h1{
+		display: inline;
+		font-size:25px;
+		width:20%;
+		background-color:#ebcc34;
+		border:1px solid black;
+		font-family:font;
+		font-weight:600;
+	}
+	body{
+		background-image:url('../images/cc.jpg');
+		background-repeat:no-repeat;
+		background-size:100%;
+	}
+	ol li{
+		display:inline-block;
+	}
+	p{
+		display:inline;
+		font-size:20px;
+		background-color:#ebcc34;
+		background: linear-gradient(to right, #025a22 0%, #e4b922 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	div.anim{
+		width: 100px;
+	    height: 100px;
+	    background-image: url('../images/favicon.ico');
+	    background-repeat:no-repeat;
+	    background-size:100%;
+	    position: relative;
+	    animation-name: albina;
+	    animation-duration: 15s;
+	}
+
+	@keyframes albina {
+	    0%   {left:0px; top:0px; transform: scale(0.1);}
+	    50%  {left:1250px; top:0px;}
+	    100% {left:0px; top:0px; transform: scale(1); }
+	}
+	@media screen and (min-width:400px) and (max-width:700px){
+		body{
+			background-size:100% 315px;
+		}
+		div.anim{
+			animation-duration:0s;
+		}
+	}
+	@media screen and (min-width:700px) and (max-width:1000px){
+		body{
+			background-size:100% 410px;
+		}
+		div.anim{
+			animation-duration:0s;
+		}
+	}
+
+	

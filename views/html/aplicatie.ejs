@@ -1,0 +1,71 @@
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Inregistrare</title> 
+		<meta name="description" content="Inregistrare utilizator">
+        <meta name="author" content="Mihai Hernest">
+        <meta name="keywords" content="inregistare,utilizator,apicultor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/stil.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/stilinreg.css"/>
+		<script src="../js/ejs.min.js"></script>
+		<script src="../js/script_aplicatie.js"></script>
+    </head>
+	<header>
+	<%- include("../fragmente/header")  %>
+	</header>
+	
+	<div class="afis" id="afisTemplate">
+    </div>
+	
+	<div id="container_butoane">
+		<button id="sorteaza_nume">Sorteaza produsele dupa nume</button>
+		<button id="medie_preturi">Medie preturi</button>
+		<button id="reset" onclick="reset1()">Resetare sortare/filtrare</button>
+		<button id="select">Cel mai bun produs calitate/pret(selectat)</button>
+		<button id="modif">Modificati calitatea</button>
+	</div>
+	<p id="medie"></p>
+	
+	<p>Pastreaza produsele cu id-ul:</p>
+	<form id="formular">
+		<input type="checkbox">
+		<label for="id1">Id: 1</label><br>
+		<input type="checkbox">
+		<label for="id2">Id: 2</label><br>
+		<input type="checkbox">
+		<label for="id3">Id: 3</label><br>
+		<input type="checkbox">
+		<label for="id4">Id: 4</label><br>
+		<input type="checkbox">
+		<label for="id5">Id: 5</label><br>
+		<input type="checkbox">
+		<label for="id6">Id: 6</label><br>
+		<input type="checkbox">
+		<label for="id7">Id: 7</label><br>
+		<input type="checkbox">
+		<label for="id8">Id: 8</label><br>
+		<input type="checkbox">
+		<label for="id9">Id: 9</label><br>
+		<input type="checkbox">
+		<label for="id10">Id: 10</label><br>
+	</form>
+	<button onclick="pastreaza_id()">Submit</button><br><br><br>
+	
+	<form>
+	<p>Pastreaza produsele care sunt in stoc(1)/cele care nu sunt in stoc(2)</p>
+	<input type="radio" id="dn1" name="op" onclick="func1()">
+	<label for="op1">1</label><br>
+	<input type="radio" id="dn2" name="op" onclick="func2()">
+	<label for="op2">2</label><br>
+	</form>
+	<button onclick="but()">Submit</button>
+	<button onclick="res()">Reset</button>
+	<body>
+	<main>
+	</main>
+	
+	<%- include("../fragmente/footer") %>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Inregistrare</title> 
+		<meta name="description" content="Inregistrare utilizator">
+        <meta name="author" content="Mihai Hernest">
+        <meta name="keywords" content="inregistare,utilizator,apicultor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/stil.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/stilinreg.css"/>
+		<script src="js/script_inreg.js"></script>
+    </head>
+	<header>
+	<%- include("../fragmente/header")  %>
+	</header
+	<body>
+	<main>
+		<div style="background-image: url('../images/back.jpg');">
+		</div>
+		<h1>Inregistrare apicultor</h1>
+		<form action='/inreg' class="date" method="post" enctype="multipart/form-data">
+			<p>
+			<label>
+				Nume: <input type="text" name="nume" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Username: <input type="text" name="username" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Email: <input type="text" name="email" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Numar stupi detinuti: <input type="number" name="nrstupi" value="">
+			</label
+			</p>
+			<p>
+			<label>
+				Alegeti tipul/tipurile preferate de miere:<input type="text" name="miere" value="salcam, rapita, floare" size="50">
+			</label>
+			</p>
+			<p>			
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<p id="timp_p"></p>
+	</main>
+	
+	<%- include("../fragmente/footer") %>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<header>
+	
+		<nav>
+			<ul class="menu">
+				<li><a href="/">HOME</a></li>
+				<li>
+					<div>PRODUSE</div>
+						<ul class="submenu">
+							<li><a href="/promotii">PROMOTII</a></li>
+							<li><a href="/produse">STOC</a></li>
+						</ul>
+				</li>
+				<li><a href="/livrarecomenzi">LIVRARE</a></li>
+				<li>
+					<div>DIVERSE</div>
+						<ul class="submenu">
+							<li><a href="/info">ARTICOLE</a></li>
+							<li><a href="/galerie">GALERIE</a></li>
+						</ul>
+				</li>
+				<li><a href="/inreg">INREGISTRARE</a></li>
+				<li><a href="/aplicatie">APLICATIE JS</a></li>
+			</ul>
+		</nav>
+	</br>
+		<% if(!locals.username) { %>
+        <p>Va rugam sa va logati: <br/>
+
+		<form action='/login' id="login" method="post" >
+			<label>
+				Username: <input type="text" name="username" value="">
+			</label>
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			
+			<input type="submit" value="Submit">
+		</form>
+			<% } else { %>
+			<li class="st">Logat: <%= locals.username %>
+		<a href="/logout"> Logout</a></li>
+			<% } %>
+			<hr/>
+</header>

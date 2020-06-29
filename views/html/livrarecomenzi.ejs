@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- VALIDAT -->
+<html lang="ro">
+    <head>
+		<meta charset="UTF-8"/>
+		<title id="titlu">Livrare</title> 
+		<meta name="description" content="Livrarea comenzilor in tara si strainatate">
+        <meta name="author" content="Mihai Hernest">
+        <meta name="keywords" content="livrare,informatii,plata,pret,curier,rapid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/stil.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/stillivrare.css"/>
+		<script src="js/script_livrare.js"></script>
+    </head>
+	<body>
+		<figure>
+            <img id="albina" src="../images/image.jpg" alt="albina" class="center" title="albina"/> 
+            <figcaption id="api" class="center">APINET</figcaption>
+        </figure>
+		<%- include("../fragmente/header")  %>
+		<main>
+			<section>
+				<h1>LIVRARE</h1>
+				<p>Fiecare client are nevoi diferite. <b>ApiNet</b> oferă o gamă variată de servicii de transport al coletelor pentru a acoperi aceste nevoi.</p>
+				<p>Respectăm dreptul dumneavoastră de a cunoaște prețul de transport înainte de efectuarea comenzii și vă oferim <b>un serviciu unic pentru magazinele de unelte apicole din România - Serviciul de Calcul Exact al Costului de Transport.</b></p>
+				<article>
+					<h2>SOLUTIE DE TRANSPORT:</h2>
+					<p id="par"><b> - Curierat rapid - Bee Curier</b> - timp de livrare 24 ore la ușa dumneavoastră în aproape toate locațiile din țara. Serviciu de notificare prin SMS. Serviciu de verificare în timp real a poziției coletului (Track and Trace). Preturi mici negociate special pentru dumneadoastra de către <b>ApiNet</b>.</p>
+				</article>
+				<button onclick="func1()">10px</button>
+				<button onclick="func2()">14px</button>
+				<button onclick="func3()">18px</button>
+				<button onclick="res()">Reseteaza</button>
+				<p id="dim"></p>
+			</section>
+			<section>
+				<h2>PLATA</h2>
+				<p>ApiNet oferă două modalități de plată ale comenzilor:<p>
+				<ol>
+					<li><b>Plata ramburs cu cash la ridicarea coletului de la curier.</b></li>
+					<li><b>Plata prin card online.</b> Prin intermediul serviciului de plati online, BeePAY, beneficiati de tranzactii sigure fara costuri suplimentare.</li>
+				</ol>
+			</section>
+			<section>
+				<h2>LIVRARE SI PLATA IN STRAINATATE</h2>
+				<p>Momentan site-ul ApiNet nu este pregatit pentru a servi clienti din afara Romaniei. Daca sunteti un astfel de client va rugam sa ne contactati pentru a gasi o solutie personalizata pentru dumneavoastra.</p>
+			</section>
+			<div class="anim"></div>
+			<p id="timp_p"></p>
+		</main>
+		
+	<%- include("../fragmente/footer") %>
+	</body>
+</html>

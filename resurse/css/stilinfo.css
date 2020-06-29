@@ -1,0 +1,112 @@
+/*VALIDAT*/
+h1#art{
+		display: inline;
+		font-size:25px;
+		width:20%;
+		background-color:#ebcc34;
+		border:1px solid black;
+		font-family:font;
+		font-weight:600;
+	}
+body{
+		counter-reset: nra;
+		background-image:url('../images/cc.jpg');
+		background-repeat:no-repeat;
+		background-size:100%;
+		background-attachment:fixed;
+	}
+ul li{
+	display:inline-block;
+}
+div.stca{
+	white-space:nowrap;
+	font-size:25px;
+	width:77px;
+	overflow:hidden;
+	border:1px solid #000000;
+}
+div.stca:hover{
+	overflow:visible;
+	border:1px solid #000000;
+}
+table#tabel, table#tabel td, table#tabel th{
+	border: 1px solid black;
+	padding: 1em;
+}
+table#tabel{
+	display: block; 
+	float: left;
+	border-spacing:0;
+	border-collapse:separate;
+	box-sizing:border-box;
+}
+table#tabel>tbody tr {
+	counter-increment: nra; 
+}
+
+table#tabel tfoot td::after{
+	font-weight:bold;
+	content: " " counter(nra);
+}
+
+@media screen and (min-width:400px) and (max-width:700px){
+	body{
+			background-attachment:scroll;
+		}
+	table#tabel,table#tabel tr{
+			border:none;
+			padding:0;
+			margin:0;
+			display:block;
+		}
+		table#tabel td{
+			display:block;
+			padding:0.2em;
+			box-sizing:border-box; 
+		}
+		table#tabel thead{
+			display:none;
+		}
+		table#tabel tbody td:nth-child(1)::before{
+			content:"Planta: ";
+		}
+		table#tabel tbody td:nth-child(2)::before{
+			content:"Nr. familii de albine/ha : ";
+		}
+		table#tabel tbody td:nth-child(3)::before{
+			content:"Spor de productie: ";
+		}
+			
+		table#tabel td{
+			border-bottom:none;
+			border-top:none;
+			float:left;
+			width:80%;
+			padding-left:2%;
+			padding-right:2%;
+		}
+		table#tabel td:before{
+			float:left;
+			width:35%;
+			background:#ed9d00;
+			font-weight:bold;
+			margin-right:0.5em;
+			padding:0.1em;
+			line-height:100%;
+		}
+		table#tabel td:last-child{
+			border-bottom:1px dashed #ed9d00;
+		}
+		table#tabel tr:first-child  td:first-child{
+			border-top:1px solid black;
+		}
+		table#tabel tr:last-child td:last-child{
+			border-bottom:1px solid black;
+		}
+	}
+@media screen and (min-width:700px) and (max-width:1000px){
+		body{
+			background-size:100% 410px;
+			background-attachment:scroll;
+		}
+	}

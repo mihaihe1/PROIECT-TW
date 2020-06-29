@@ -1,0 +1,51 @@
+	/*VALIDAT*/
+	li{
+		display: list-item;
+		list-style-position: inside;
+		background-color:transparent;
+		font-family:verdana;
+		font-size:20px;
+		margin-left:1%;
+		border:0px;
+	}
+	h1{
+		display: inline;
+		font-size:25px;
+		width:20%;
+		background-color:#ebcc34;
+		border:1px solid black;
+		font-family:font;
+		font-weight:600;
+	}
+	body{
+		background-image:url('../images/back.jpg');
+		background-repeat:no-repeat;
+		background-size:100%;
+	}
+	table{
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 30%;
+	}
+	td, th{
+		border: 2px solid black;
+		text-align: left;
+		padding: 8px;
+	}
+	tr{
+	background-color: #dddddd;
+	}
+	
+	@media screen and (min-width:400px) and (max-width:700px){
+		body{
+			background-size:100% 315px;
+		}
+	}
+	
+	@media screen and (min-width:700px) and (max-width:1000px){
+		body{
+			background-size:100% 410px;
+		}
+	}
+	
+	

@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- VALIDAT -->
+<html lang="ro">
+    <head>
+		<meta charset="UTF-8"/>
+		<title>Promotii</title> 
+		<meta name="description" content="Promotiile site-ului APINET">
+        <meta name="author" content="Mihai Hernest">
+        <meta name="keywords" content="promotii,stup,reduceri,ieftin,miere,stoc">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/stil.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/stilpromotii.css"/>
+		<script src="js/script_prom.js"></script> 
+	</head>
+	<body>
+		<figure>
+            <img id="albina" src="../images/image.jpg" alt="Albina" class="center" title="albina"/> 
+            <figcaption id="api" class="center">APINET</figcaption>
+        </figure>
+		<%- include("../fragmente/header")  %>
+		<main>
+		<h1>Cele mai vandute produse</h1>
+		<ol id="lista">
+			<li>Stup vertical</li>
+			<li>Miere de albine</li>
+			<li>Hrana albine</li>
+			<li>Afumator inox</li>
+			<li>Apifonda</li>
+			<li>Centrifuga apicola</li>
+		</ol>
+		<form>
+			<p>Indice lista:</p>
+			<input type="radio" onclick="arabe()" name="lista1" checked="checked">
+			<label for="arabe">Cifre arabe</label><br>
+			<input type="radio" onclick="mari()" name="lista1">
+			<label for="mari">Litere mari</label><br>
+			<input type="radio" onclick="mici()" name="lista1">
+			<label for="mici">Litere mici</label><br>
+			<input type="radio" onclick="romane()" name="lista1">
+			<label for="romane">Cifre romane</label>
+		</form>
+			<h1>PROMOTII</h1>
+				<table>
+					<caption>Promotiile site-ului APINET</caption>
+					<thead>
+						<tr>
+							<th rowspan="2">Nume Produs</th>
+							<th rowspan="2">Stoc</th>
+							<th colspan="2">Pret</th>
+						</tr>
+						<tr>
+							<th>Pret Vechi</th>
+							<th>Pret Nou</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Stup Vertical 12 rame</td>
+							<td>10</td>
+							<td>340.00 RON</td>
+							<td>315.00 RON</td>
+						</tr>
+						<tr>
+							<td>Centrifuga apicola 4 rame</td>
+							<td>Stoc Epuizat</td>
+							<td>2000.00 RON</td>
+							<td>1650.00 RON</td>
+						</tr>
+						<tr>
+							<td>Hrana albine</td>
+							<td>78</td>
+							<td>8.00 RON</td>
+							<td>5.70 RON</td>
+						</tr>
+						<tr>
+							<td>Colector polen plastic</td>
+							<td>33</td>
+							<td>29.90 RON</td>
+							<td>23.00 RON</td>
+						</tr>
+						<tr>
+							<td>Faguri artificiali 5kg</td>
+							<td>Stoc epuizat</td>
+							<td>250.00 RON</td>
+							<td>195.00 RON</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr><td colspan="4">Bee-lieve in your purchase!</td></tr>
+					</tfoot>
+				</table>
+				<p id="timp_p"></p>
+		</main>
+	<%- include("../fragmente/footer") %>
+	</body>
+</html>
+			
